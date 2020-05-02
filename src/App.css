@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+.nav {
+  border-bottom: black solid 2px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  border-style: black solid 1px;
+  background-color: cadetblue;
+  padding: 0.5em;
+  border-radius: 0.7em;
+}
+
+.home {
+  background-image: url("IMG_2675.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}

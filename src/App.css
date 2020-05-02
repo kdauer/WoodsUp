@@ -40,6 +40,22 @@
 
 * {
   font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.nav-img {
+  padding-top: 1em;
+  background-image: url("paul-gilmore-KT3WlrL_bsg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
 }
 
 .nav {
@@ -50,14 +66,16 @@
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   border-style: black solid 1px;
-  background-color: cadetblue;
-  padding: 0.5em;
+  background-color: rgb(48, 136, 21);
+  padding: 0.15em 0.4em;
   border-radius: 0.7em;
 }
 
@@ -67,4 +85,24 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+
+.Footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0.1em;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: rgb(48, 136, 21);
+}
+
+.Footer a:nth-child(1) {
+  margin-left: 5em;
+}
+.Footer a:nth-child(2) {
+  margin-left: 1em;
 }

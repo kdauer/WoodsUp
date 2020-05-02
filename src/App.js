@@ -8,15 +8,20 @@ import FProjects from "./components/fprojects";
 import Support from "./components/support";
 import Links from "./components/links";
 import { Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 // import Impress from "./components/legalnotice";
 // import DSGVO from "./components/privacypolicy";
 
 function App() {
   return (
     <div className="App">
-      <h1>WoodsUp</h1>
+      <div className="nav-img">
+        <h1 className="logo" style={{ color: "white" }}>
+          WoodsUp
+        </h1>
 
-      <NavBar />
+        <NavBar />
+      </div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -27,6 +32,7 @@ function App() {
         {/* <Route path="/legalnotice" component={Impress} />
         <Route path="/privacypolicy" component={DSGVO} /> */}
       </Switch>
+      <Footer />
     </div>
   );
 }

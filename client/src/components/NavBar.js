@@ -14,13 +14,23 @@ export default function NavBar() {
                 {" "}
                 <Link to="/about">Über uns</Link>
               </li>
-              <li>
+              <li className="dropdown">
                 {" "}
                 <Link to="/past-projects">vergangene Projekte</Link>
+                <div>
+                  <li id="dropdown-item">
+                    <Link to="/past-projects/:id">Project A</Link>
+                  </li>
+                </div>
               </li>
-              <li>
+              <li className="dropdown">
                 {" "}
                 <Link to="/future-projects">zukünftige Projekte</Link>
+                <div>
+                  <li id="dropdown-item">
+                    <Link to="/future-projects/:id">Project B</Link>
+                  </li>
+                </div>
               </li>
               <li>
                 {" "}

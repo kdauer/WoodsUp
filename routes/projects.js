@@ -1,10 +1,10 @@
 /* Here we'll write the routes for the posts */
-const router = require("express").Router();
-const Project = require("../models/Project");
-const User = require("../models/User");
+const router = require('express').Router();
+const Project = require('../models/Project');
+const User = require('../models/User');
 /* Here we'll write the routes for the posts */
 
-router.get("/project", (req, res) => {
+router.get('/projects', (req, res) => {
   let sort = {};
   // if (req.query.sortBy) {
   //   sort[req.query.sortBy] = -1;
@@ -30,7 +30,7 @@ router.get("/project", (req, res) => {
     });
 });
 
-router.get("/projects/:id", (req, res) => {
+router.get('/projects/:id', (req, res) => {
   const projectId = req.params.id;
 
   Project.findById(projectId)
@@ -44,7 +44,7 @@ router.get("/projects/:id", (req, res) => {
     });
 });
 
-router.post("/project", (req, res) => {
+router.post('/projects', (req, res) => {
   // Todo: add a middleware to protect this route from non-logged in users
 
   // const title = req.body.title;

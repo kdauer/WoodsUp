@@ -1,68 +1,134 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 
-const Signup = props => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const setUsernameHandler = event => {
-    setUsername(event.target.value);
+export default class Signup extends Component {
+  state = {
+    username: '',
+    password: '',
+    message: ''
   };
 
-  const setPasswordHandler = event => {
-    setPassword(event.target.value);
+  handleChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
   };
 
-  const handleSubmit = event => {
+  handleSubmit = event => {
     event.preventDefault();
 
     axios
-      .post("/api/auth/signup", {
-        username: username,
-        password: password
+      .post('api/auth/signup', {
+        username: this.state.username,
+        password: this.state.password
       })
       .then(response => {
-        console.log("signup .then response");
-        props.setUser(response.data);
-        props.history.push("/");
+        // redirect
+        this.props.history.push('/');
+        // update state for user in <App/>
+        this.props.setUser(response.data);
       })
       .catch(err => {
-        console.log(err);
+        this.setState({
+          message: err.response.data.message
+        });
       });
   };
 
-  return (
-    <div className="login">
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email"></label>
+  render() {
+    return (
+      <>
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="username">Username: </label>
           <input
             type="text"
             id="username"
             name="username"
-            placeholder="Username"
-            value={username}
-            onChange={setUsernameHandler}
+            value={this.state.username}
+            onChange={this.handleChange}
           />
-        </div>
 
-        <div>
-          <label htmlFor="password"></label>
+          <label htmlFor="password">Password: </label>
           <input
             type="password"
-            id="password"
             name="password"
-            placeholder="Password"
-            value={password}
-            onChange={setPasswordHandler}
+            id="password"
+            value={this.state.password}
+            onChange={this.handleChange}
           />
-        </div>
-        <div>
-          <button type="submit">Register</button>
-        </div>
-      </form>
-    </div>
-  );
-};
 
-export default Signup;
+          <button type="submit">Sign up</button>
+        </form>
+        {this.state.message && <p>{this.state.message}</p>}
+      </>
+    );
+  }
+}
+// import React, { useState } from 'react';
+// import axios from 'axios';
+
+// const Signup = props => {
+//   const [username, setUsername] = useState('');
+//   const [password, setPassword] = useState('');
+
+//   const setUsernameHandler = event => {
+//     setUsername(event.target.value);
+//   };
+
+//   const setPasswordHandler = event => {
+//     setPassword(event.target.value);
+//   };
+
+//   const handleSubmit = event => {
+//     event.preventDefault();
+
+//     axios
+//       .post('/api/auth/signup', {
+//         username: username,
+//         password: password
+//       })
+//       .then(response => {
+//         console.log('signup happening');
+//         props.setUser(response.data);
+//         props.history.push('/');
+//       })
+//       .catch(err => {
+//         console.log(err);
+//       });
+//   };
+
+//   return (
+//     <div className="login">
+//       <form onSubmit={handleSubmit}>
+//         <div>
+//           <label htmlFor="email"></label>
+//           <input
+//             type="text"
+//             id="username"
+//             name="username"
+//             placeholder="Username"
+//             value={username}
+//             onChange={setUsernameHandler}
+//           />
+//         </div>
+
+//         <div>
+//           <label htmlFor="password"></label>
+//           <input
+//             type="password"
+//             id="password"
+//             name="password"
+//             placeholder="Password"
+//             value={password}
+//             onChange={setPasswordHandler}
+//           />
+//         </div>
+//         <div>
+//           <button type="submit">Register</button>
+//         </div>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default Signup;

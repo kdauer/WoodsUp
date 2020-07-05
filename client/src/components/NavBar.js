@@ -19,13 +19,13 @@ export default function NavBar() {
                 <Link to="/projects">Projekte</Link>
                 <div>
                   <li id="dropdown-item">
-                    <Link to="/projects/:id">Sample Text</Link>
+                    <Link to="/projects/:id">Island</Link>
                   </li>
                 </div>
               </li>
               <li>
                 {' '}
-                <Link to="/history">Geschichte</Link>
+                <Link to="/history">Historie</Link>
               </li>
               <li>
                 {' '}

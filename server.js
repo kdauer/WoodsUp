@@ -20,10 +20,9 @@ app.use(express.static("client/build")); // makes the client/build folder static
 const routes = require("./routes"); // this is our controller and will manage all the routes so we don't have to register any new route handler here
 app.use(routes);
 
-//==> Sending html file
 app.use((req, res) => {
   // // If no routes match, send them the React HTML.
-  res.sendFile("/client/build/index.html");
+  res.sendFile(__dirname + "/client/build/index.html");
 });
 
 app.listen(process.env.PORT, () => {

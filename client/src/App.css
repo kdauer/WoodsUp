@@ -2,10 +2,10 @@
   color: #61dafb;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -63,7 +63,7 @@ label {
 
 .nav-img {
   padding-top: 1em;
-  background-image: url("paul-gilmore-KT3WlrL_bsg-unsplash.jpg");
+  background-image: url('paul-gilmore-KT3WlrL_bsg-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -93,7 +93,7 @@ label {
 }
 
 .home {
-  background-image: url("IMG_2675.JPG");
+  background-image: url('IMG_2675.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -182,4 +182,70 @@ label {
 
 .dropdown:hover #dropdown-item {
   display: block;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 2em;
+  padding: 1em;
+}
+.about-container h1 {
+  margin: 0.5em;
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 4em;
+}
+
+.history-heading {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.history-container li {
+  line-height: 2em;
+}
+
+.support-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.support-container h1 {
+  text-align: center;
+  margin: 1em;
+}
+
+.DSGVO {
+  margin: 2em;
+  text-align: left;
+  max-width: 90%;
+}
+.DSGVO h5 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.DSGVO a {
+  text-decoration: none;
+}
+
+.DSGVO ul li {
+  margin-left: 2em;
+}
+
+.impress {
+  margin: 2em;
+}
+.impress h5 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.impress a {
+  text-decoration: none;
 }

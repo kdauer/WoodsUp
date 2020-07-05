@@ -1,4 +1,3 @@
-/* Here we'll write the routes for the posts */
 const router = require('express').Router();
 const Project = require('../models/Project');
 const User = require('../models/User');
@@ -20,8 +19,8 @@ router.get('/projects', (req, res) => {
   Project.find()
     .sort(sort)
     .limit(10)
-    .then(projects => {
-      res.json(projects);
+    .then(posts => {
+      res.json(posts);
     })
     .catch(err => {
       res.status(500).json({
@@ -33,7 +32,7 @@ router.get('/projects', (req, res) => {
 router.get('/projects/:id', (req, res) => {
   const projectId = req.params.id;
 
-  Project.findById(projectId)
+  Post.findById(projectId)
     .then(project => {
       res.json(project);
     })
@@ -50,18 +49,16 @@ router.post('/projects', (req, res) => {
   // const title = req.body.title;
   // const type = req.body.type;
   // const content = req.body.content
-  const { title, type, content, description, tags } = req.body;
+  const { title, type, content } = req.body;
 
-  Post.create({
+  Project.create({
     title: title,
     type: type,
     content: content,
-    desription: description,
-    tags: tags,
     _author: req.user._id
   })
-    .then(projectDocument => {
-      res.json(projectDocument);
+    .then(postDocument => {
+      res.json(postDocument);
     })
     .catch(err => {
       res.status(500).json({

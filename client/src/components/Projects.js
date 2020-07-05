@@ -32,7 +32,7 @@ export default class Projects extends Component {
   render() {
     // console.log("<Posts/> RENDER");
     return (
-      <div>
+      <div className="overview-container">
         {/* {this.props.user && <ProjectsForm refresh={this.getData} />} */}
         <ProjectsList projects={this.state.projects} />
         {/* <button onClick={this.getNewestPosts}>sort by new</button> */}

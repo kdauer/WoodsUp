@@ -32,7 +32,7 @@ router.get('/projects', (req, res) => {
 router.get('/projects/:id', (req, res) => {
   const projectId = req.params.id;
 
-  Post.findById(projectId)
+  Project.findById(projectId)
     .then(project => {
       res.json(project);
     })
@@ -49,16 +49,16 @@ router.post('/projects', (req, res) => {
   // const title = req.body.title;
   // const type = req.body.type;
   // const content = req.body.content
-  const { title, type, content } = req.body;
+  const { title, image, content } = req.body;
 
   Project.create({
     title: title,
-    type: type,
     content: content,
+    image: image,
     _author: req.user._id
   })
-    .then(postDocument => {
-      res.json(postDocument);
+    .then(projectDocument => {
+      res.json(projectDocument);
     })
     .catch(err => {
       res.status(500).json({

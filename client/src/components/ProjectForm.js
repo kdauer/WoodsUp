@@ -40,48 +40,50 @@ const ProjectForm = props => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="form">
-        <div className="column">
-          <label htmlFor="name">*Title of Project:</label>
-          <input
-            type="text"
-            name="title"
-            id="tilte"
-            placeholder="e.g. Wood"
-            value={title}
-            onChange={setTitleHandler}
-          />
-        </div>
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <div className="form">
+          <div className="column">
+            <p>Title of Project</p>
+            <input
+              type="text"
+              name="title"
+              id="tilte"
+              placeholder="e.g. Wood"
+              value={title}
+              onChange={setTitleHandler}
+            />
+          </div>
 
-        <div className="column">
-          <label htmlFor="image">Image URL:</label>
-          <input
-            type="text"
-            name="image"
-            id="image"
-            placeholder="https://www.facebook.com/Islacoffeeberlin"
-            value={image}
-            onChange={setImageHandler}
-          />
+          <div className="column">
+            <p>Image URL:</p>
+            <input
+              type="text"
+              name="image"
+              id="image"
+              placeholder="https://www.facebook.com/Islacoffeeberlin"
+              value={image}
+              onChange={setImageHandler}
+            />
 
-          <label htmlFor="content">*Content:</label>
-          <textarea
-            name="content"
-            id="content"
-            className="paragraph-input"
-            rows="4"
-            cols="80"
-            placeholder="What is the project about?"
-            value={content}
-            onChange={setContentHandler}
-          ></textarea>
+            <p>Content</p>
+            <textarea
+              name="content"
+              id="content"
+              className="paragraph-input"
+              rows="4"
+              cols="80"
+              placeholder="What is the project about?"
+              value={content}
+              onChange={setContentHandler}
+            ></textarea>
+          </div>
         </div>
-      </div>
-      <div className="form-end">
-        <button>Submit request</button>
-      </div>
-    </form>
+        <div className="form-end">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
   );
 };
 

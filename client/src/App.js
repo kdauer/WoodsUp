@@ -6,10 +6,11 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
+import ProjectDetail from './components/ProjectDetail';
 import ProjectForm from './components/ProjectForm';
 import History from './components/History';
 import Support from './components/Support';
-import Knowing from './components/Links.js';
+import Knowing from './components/Links';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Footer from './components/Footer';
@@ -45,6 +46,13 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
+          <Route
+            exact
+            path="/projects/:id"
+            render={props => (
+              <ProjectDetail {...props} isLoggedIn={Boolean(this.state.user)} />
+            )}
+          />
           <Route exact path="/history" component={History} />
           <Route exact path="/add-project" component={ProjectForm} />
           <Route exact path="/support" component={Support} />

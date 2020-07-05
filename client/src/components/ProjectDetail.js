@@ -7,11 +7,12 @@ export default class ProjectDetail extends Component {
   };
 
   componentDidMount() {
-    const id = this.props.match.params.projectId;
+    const id = this.props.match.params.id;
 
     axios.get(`/api/projects/${id}`).then(response => {
+      console.log('single project here', response.data);
       this.setState({
-        projects: response.data
+        project: response.data
       });
     });
   }
@@ -23,14 +24,13 @@ export default class ProjectDetail extends Component {
       return <div>Loading</div>;
     }
     return (
-      <div>
+      <div className="detail-container">
         <h2>{project.title}</h2>
-        {project.type === 'link' ? (
-          <a href={project.content}>{project.content}</a>
-        ) : (
-          <p>{project.content}</p>
-        )}
-        <p>posted on {new Date(project.created_at).toDateString()}</p>
+        <img src={project.image} alt={project.title} />
+        <p>{project.content}</p>
+        <p id="created">
+          posted on {new Date(project.created_at).toDateString()}
+        </p>
       </div>
     );
   }

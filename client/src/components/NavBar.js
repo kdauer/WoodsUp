@@ -17,11 +17,6 @@ export default function NavBar() {
               <li className="dropdown">
                 {' '}
                 <Link to="/projects">Projekte</Link>
-                <div>
-                  <li id="dropdown-item">
-                    <Link to="/projects/:id">Island</Link>
-                  </li>
-                </div>
               </li>
               <li>
                 {' '}

@@ -1,33 +1,61 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// const navSlide = () => {
+//   nav.classlist.toggle('nav-active');
+// };
+
+// navLinks.forEach((link, index)=> {
+//   if (link.style.animation) {
+//     link.style.animation = ""
+// } else {
+//   link.style.animation = `navLinksFade 0.5s ease forward ${index / 7 + 0.3}s`
+
+// }
+// burger.classlist.toggle("toggle")
+// })
+
 export default function NavBar() {
   return (
     <div>
-      <header class="header">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-          <span class="navicon"></span>
-        </label>
-        <ul class="menu">
+      <nav className="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <ul className="main-nav" id="js-menu">
           <li>
-            <Link to="/about">Über uns</Link>
+            <Link to="/about" className="nav-links">
+              Über uns
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projekte</Link>
+            <Link to="/projects" className="nav-links">
+              Projekte
+            </Link>
           </li>
           <li>
-            <Link to="/history">Historie</Link>
+            <Link to="/history" className="nav-links">
+              Historie
+            </Link>
           </li>
           <li>
-            <Link to="/support">Unterstützung</Link>
+            <Link to="/support" className="nav-links">
+              Unterstützung
+            </Link>
           </li>
           <li>
             {' '}
-            <Link to="/links">Wissenswertes</Link>
+            <Link to="/links" className="nav-links">
+              Wissenswertes
+            </Link>
           </li>
         </ul>
-      </header>
+        <div className="burger">
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+      </nav>
     </div>
   );
 }

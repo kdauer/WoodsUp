@@ -99,7 +99,7 @@ const Signup = props => {
 
   return (
     <div className="login">
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email"></label>
           <input
@@ -126,7 +126,7 @@ const Signup = props => {
         <div>
           <button type="submit">Register</button>
         </div>
-      </form>
+      </form> */}
     </div>
   );
 };

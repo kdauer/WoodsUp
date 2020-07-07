@@ -44,6 +44,23 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route
+            path="/signup"
+            render={props => (
+              <Signup
+                history={props.history}
+                // {...props}
+                setUser={this.setUser}
+              />
+            )}
+            // component={Signup}
+          />
+          <Route
+            path="/login"
+            render={props => (
+              <Login history={props.history} setUser={this.setUser} />
+            )}
+          />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route
@@ -54,11 +71,15 @@ class App extends React.Component {
             )}
           />
           <Route exact path="/history" component={History} />
-          <Route exact path="/add-project" component={ProjectForm} />
+          <Route
+            exact
+            path="/add-project"
+            render={props => (
+              <ProjectForm history={props.history} setUser={this.setUser} />
+            )}
+          />
           <Route exact path="/support" component={Support} />
           <Route exact path="/links" component={Knowing} />
-          <Route exact path="/signup" component={Signup} />
-          <Route exact path="/login" component={Login} />
           <Route path="/legalnotice" component={Impress} />
           <Route path="/privacypolicy" component={DSGVO} />
         </Switch>

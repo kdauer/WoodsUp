@@ -1,20 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// const navSlide = () => {
-//   nav.classlist.toggle('nav-active');
-// };
-
-// navLinks.forEach((link, index)=> {
-//   if (link.style.animation) {
-//     link.style.animation = ""
-// } else {
-//   link.style.animation = `navLinksFade 0.5s ease forward ${index / 7 + 0.3}s`
-
-// }
-// burger.classlist.toggle("toggle")
-// })
-
 export default function NavBar() {
   return (
     <div className="nav">

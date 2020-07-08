@@ -368,6 +368,16 @@ button {
   .mask {
     padding: 1.8em 3.8em;
   }
+  .home {
+    background-image: url('DSC073482.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1000;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
 }
 
 /*NAV*/

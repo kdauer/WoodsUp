@@ -5,7 +5,7 @@ export default function About() {
     <div className="about-container">
       <h1>Über uns</h1>
       <h3>
-        “Wir können nicht laenger warten, wir sind die letzte Generation, die
+        “Wir können nicht länger warten, wir sind die letzte Generation, die
         noch effektiv die Folgen der ökologischen Katastrophe abmildern kann”
         (Carola Rakete)
       </h3>
@@ -13,14 +13,14 @@ export default function About() {
       <p>
         Woodsup ist ein geimeinütziger Verein der sich für den Klima und
         Bodenschutz einsetzt. Insbesondere wird dieser Zweck durch Planung
-        Koordination und Durchführung von Aufforstung und Buampflanzprojekten,
-        Pflegemassnahmen, sowie Umweltbildungsprojekten verwirklicht.{' '}
+        Koordination und Durchführung von Aufforstung und Baumpflanzprojekten,
+        Pflegemaßnahmen, sowie Umweltbildungsprojekten verwirklicht.{' '}
       </p>
       <br />
       <p>
         Wir verstehen uns als eine selbsbestimmt agierende Gruppe die unabhängig
         von Parteien und Verbänden agiert. Unser Hauptziel ist es möglichst
-        schnell und effektiv in der bestehenden Klimakataqstrophe zu
+        schnell und effektiv in der bestehenden Klimakatastrophe zu
         intervenieren. Wir möchten möglichst viele Bäume zur CO2-Bindung wachsen
         sehen.
       </p>

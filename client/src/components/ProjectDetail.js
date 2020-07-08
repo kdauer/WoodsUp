@@ -26,11 +26,12 @@ export default class ProjectDetail extends Component {
     return (
       <div className="detail-container">
         <h2>{project.title}</h2>
-        <img src={project.image} alt={project.title} />
+        {project.image ? (
+          <img src={project.image} alt={project.title} />
+        ) : (
+          <div></div>
+        )}
         <p>{project.content}</p>
-        <p id="created">
-          posted on {new Date(project.created_at).toDateString()}
-        </p>
       </div>
     );
   }

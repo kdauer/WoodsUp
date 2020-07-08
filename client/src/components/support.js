@@ -6,8 +6,9 @@ export default function support() {
       <h1>Unterstützung</h1>
       <p>
         <b>
-          Für unsere Aktionen brauchen wir Geld, Unterstützung; Flächen, Ideen,
-          Bäume, Setzlinge… !
+          Wir freuen uns über Jede*, die mitmachen möchte. Wir benötigen aber
+          auch bepflanzbare Flächen und Baumsetzlinge. Die Aktionen werden durch
+          Geldspenden ermöglicht.
         </b>
       </p>
       <p>
@@ -26,6 +27,15 @@ export default function support() {
       <p>
         Kontakt: <a href="woodsup@posteo.de">woodsup@posteo.de</a>
       </p>
+      <div className="paypal">
+        <img src="/QR-Code.png" alt="QR-Code" />
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F4CTCSJDAN8DQ&source=url"
+          className="donate-btn"
+        >
+          Spenden mit Paypal
+        </a>
+      </div>
     </div>
   );
 }

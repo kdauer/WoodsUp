@@ -49,17 +49,7 @@ body {
   width: 100vw;
 }
 
-.navbar {
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links {
+/* .nav-links {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   color: #fff;
@@ -71,63 +61,7 @@ body {
   border-radius: 0.7em;
   line-height: 70px;
   margin: 2em 0 2em 0;
-}
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-}
-
-.active {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
-  }
-}
+} */
 
 .home {
   background-image: url('IMG_2675.JPG');
@@ -239,31 +173,23 @@ body {
   z-index: -1000;
 }
 
-.form,
-.column {
+.create-project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: -1000;
+  margin-top: 1em;
 }
 
-.form > input,
-.column > input {
-  width: 100%;
+.create-project input {
+  width: 40%;
 }
 
-.form-end {
-  display: flex;
-  justify-content: center;
-  margin: 1em;
-  padding: 1em;
-}
-
-.form-end button {
+.create-btn {
   padding: 0.3em;
   background-color: lightblue;
   border-radius: 3px;
   border-style: none;
+  margin: 0.4em;
 }
 
 .project-container {
@@ -320,8 +246,8 @@ body {
   margin: 4em auto;
 }
 
-input {
-  order: 1px solid var(--navy);
+#username,
+#password {
   height: 36px;
   margin-bottom: 16px;
   width: 100%;
@@ -402,6 +328,33 @@ button {
   font-size: 2em;
 }
 
+.paypal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-btn {
+  background-color: #0070ba;
+  border-radius: 1.5rem;
+  border: 0.0625rem solid #0070ba;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-family: 'PayPalSansSmall-Regular', Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-weight: 700;
+  min-width: 6rem;
+  padding: 0.6875rem 1.4375rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, box-shadow 0.2s ease;
+  margin: 1em;
+}
+
 @media screen and (max-width: 500px) {
   .projectImg {
     width: 100%;
@@ -414,5 +367,103 @@ button {
   }
   .mask {
     padding: 1.8em 3.8em;
+  }
+}
+
+/*NAV*/
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 14px;
+  background-color: rgba(48, 136, 21, 255);
+  padding: 0.15em 0.4em;
+  border-radius: 0.7em;
+  line-height: 2em;
+  margin: 2em 3em 2em 0;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }

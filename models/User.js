@@ -1,5 +1,5 @@
 /* We'll write the schema and register our model for the users here */
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
@@ -8,21 +8,15 @@ const userSchema = new Schema(
       type: String,
       unique: true
     },
-    password: String,
-    _upvotes: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Post"
-      }
-    ]
+    password: String
   },
   {
     timestamps: {
-      createdAt: "created_at",
-      updatedAt: "updated_at"
+      createdAt: 'created_at',
+      updatedAt: 'updated_at'
     }
   }
 );
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model('User', userSchema);
 module.exports = User;

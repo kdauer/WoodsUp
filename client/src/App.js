@@ -8,7 +8,6 @@ import About from './components/About';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import ProjectForm from './components/ProjectForm';
-import History from './components/History';
 import Support from './components/Support';
 import Knowing from './components/Links';
 import Login from './components/Login';
@@ -70,7 +69,6 @@ class App extends React.Component {
               <ProjectDetail {...props} isLoggedIn={Boolean(this.state.user)} />
             )}
           />
-          <Route exact path="/history" component={History} />
           <Route
             exact
             path="/add-project"

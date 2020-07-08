@@ -17,45 +17,21 @@ import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
-    <div>
-      <nav className="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </span>
-        <ul className="main-nav" id="js-menu">
-          <li>
-            <Link to="/about" className="nav-links">
-              Über uns
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" className="nav-links">
-              Projekte
-            </Link>
-          </li>
-          <li>
-            <Link to="/history" className="nav-links">
-              Historie
-            </Link>
-          </li>
-          <li>
-            <Link to="/support" className="nav-links">
-              Unterstützung
-            </Link>
-          </li>
-          <li>
-            {' '}
-            <Link to="/links" className="nav-links">
-              Wissenswertes
-            </Link>
-          </li>
-        </ul>
-        <div className="burger">
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
-      </nav>
+    <div className="nav">
+      <input type="checkbox" id="nav-check" />
+      <div className="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div className="nav-links">
+        <Link to="/about">Über uns</Link>
+        <Link to="/projects">Projekte</Link>
+        <Link to="/support">Unterstützung</Link>
+        <Link to="/links">Motivation</Link>
+      </div>
     </div>
   );
 }

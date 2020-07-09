@@ -39,11 +39,3 @@ const ProjectsList = props => {
 };
 
 export default ProjectsList;
-
-{
-  /* <div key={project._id} className="project-container">
-        <Link to={`/projects/${project._id}`}>
-          <img src={project.image} alt="Projectpic" />{' '}
-        </Link>
-      </div> */
-}

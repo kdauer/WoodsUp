@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d1f601c.chunk.css",
+    "main.css": "/static/css/main.5ce61684.chunk.css",
     "main.js": "/static/js/main.d0394872.chunk.js",
     "main.js.map": "/static/js/main.d0394872.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.844668cf.js",
@@ -8,16 +8,16 @@
     "static/js/2.5fdd5679.chunk.js": "/static/js/2.5fdd5679.chunk.js",
     "static/js/2.5fdd5679.chunk.js.map": "/static/js/2.5fdd5679.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bf01a45f5283a0444acff3d9431b2171.js": "/precache-manifest.bf01a45f5283a0444acff3d9431b2171.js",
+    "precache-manifest.c6f7969e66baa35f0354bcac4b959259.js": "/precache-manifest.c6f7969e66baa35f0354bcac4b959259.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5d1f601c.chunk.css.map": "/static/css/main.5d1f601c.chunk.css.map",
+    "static/css/main.5ce61684.chunk.css.map": "/static/css/main.5ce61684.chunk.css.map",
     "static/js/2.5fdd5679.chunk.js.LICENSE.txt": "/static/js/2.5fdd5679.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/paul-gilmore-KT3WlrL_bsg-unsplash.824523fa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.844668cf.js",
     "static/js/2.5fdd5679.chunk.js",
-    "static/css/main.5d1f601c.chunk.css",
+    "static/css/main.5ce61684.chunk.css",
     "static/js/main.d0394872.chunk.js"
   ]
 }

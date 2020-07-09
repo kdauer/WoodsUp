@@ -7,9 +7,9 @@ export default function NavBar() {
       <input type="checkbox" id="nav-check" />
       <div className="nav-btn">
         <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
         </label>
       </div>
       <div className="nav-links">

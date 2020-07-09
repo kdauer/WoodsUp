@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const ProjectsList = props => {
   return props.projects.map(project => {
     return (
-      <div className="box" key={project._id}>
+      <div key={project._id}>
         {project.image ? (
-          <div>
+          <div className="box">
             <img
               className="projectImg"
               src={project.image}
@@ -23,13 +23,13 @@ const ProjectsList = props => {
             </div>
           </div>
         ) : (
-          <div>
+          <div className="project-heading">
             <Link
               to={`/projects/${project._id}`}
               props={project.image}
               className="link-without-image"
             >
-              <p className="project_title">{project.title}</p>
+              <p>• {project.title}</p>
             </Link>
           </div>
         )}

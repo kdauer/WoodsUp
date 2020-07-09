@@ -49,22 +49,8 @@ body {
   width: 100vw;
 }
 
-/* .nav-links {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 14px;
-  background-color: rgba(48, 136, 21, 255);
-  padding: 0.15em 0.4em;
-  border-radius: 0.7em;
-  line-height: 70px;
-  margin: 2em 0 2em 0;
-} */
-
 .home {
-  background-image: url('IMG_2675.JPG');
+  background-image: url('DSC073482.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -107,23 +93,6 @@ body {
 }
 .about-container h1 {
   margin: 0.7em;
-}
-
-.history-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 4em;
-  z-index: -1000;
-}
-
-.history-heading {
-  text-align: center;
-  margin-top: 3em;
-}
-
-.history-container li {
-  line-height: 2em;
 }
 
 .support-container {
@@ -192,6 +161,10 @@ body {
   margin: 0.4em;
 }
 
+.overview-container {
+  margin: 2em;
+}
+
 .project-container {
   z-index: -1000;
 }
@@ -215,6 +188,7 @@ body {
 .detail-container h2 {
   text-align: center;
   margin: 1em;
+  margin-top: 2.5em;
 }
 
 .detail-container img {
@@ -228,7 +202,7 @@ body {
 }
 
 .detail-container p {
-  margin: 0.75em 2em;
+  margin: 2em 2em;
   word-wrap: break-word;
   width: 50%;
   margin-left: auto;
@@ -287,20 +261,31 @@ button {
   transition: 1s ease;
   backface-visibility: hidden;
   border-radius: 6px;
+  z-index: -10;
 }
 
-.project_title {
+.project-title {
   background-color: transparent;
   margin: 0.2em;
   padding-bottom: 1em;
   font-weight: bold;
 }
 
+.project-heading {
+  margin: 2em;
+  margin-left: 25%;
+}
+
+.project-heading a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
 .mask {
   transition: 0.5s ease;
   background-color: rgba(48, 136, 21, 255);
-  /* padding: 6.5em 12.5em; */
-  padding: 13.5em 21.2em;
+  padding: 256px 260px;
   border-radius: 8px;
   opacity: 0;
   position: absolute;
@@ -355,31 +340,6 @@ button {
   margin: 1em;
 }
 
-@media screen and (max-width: 500px) {
-  .projectImg {
-    width: 100%;
-  }
-  .detail-container img {
-    width: 80%;
-  }
-  .detail-container p {
-    width: 80%;
-  }
-  .mask {
-    padding: 1.8em 3.8em;
-  }
-  .home {
-    background-image: url('DSC073482.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1000;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-  }
-}
-
 /*NAV*/
 .nav {
   height: 50px;
@@ -432,27 +392,40 @@ button {
 }
 
 @media (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+  .logo a {
+    font-size: 24px;
+  }
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
+    background-color: rgba(48, 136, 21, 255);
+    border-radius: 5px;
+    z-index: 999;
   }
   .nav > .nav-btn > label {
-    display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .nav > .nav-btn > label > span {
-    display: block;
     width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #fff;
   }
   .nav > .nav-links {
     position: absolute;
@@ -464,9 +437,11 @@ button {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    z-index: 99;
   }
   .nav > .nav-links > a {
     display: block;
+    padding-left: 2em;
     width: 100%;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
@@ -475,5 +450,50 @@ button {
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+
+  .nav #nav-check:checked ~ .nav-btn > label > .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transition: all 0.3s ease;
+  }
+
+  .nav #nav-check:checked ~ .nav-btn > label > .line2 {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .nav #nav-check:checked ~ .nav-btn > label > .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    transition: all 0.3s ease;
+  }
+
+  .projectImg {
+    width: 100%;
+  }
+  .detail-container img {
+    width: 80%;
+  }
+  .detail-container p {
+    width: 80%;
+    margin-bottom: 2em;
+  }
+  .mask {
+    padding: 74px 72px;
+  }
+  .project_title {
+    font-size: 12px;
+  }
+  .project-heading {
+    margin: 0.5em;
+    margin-left: 2em;
+  }
+  .project-heading a {
+    font-size: 12px;
+  }
+  .support-container {
+    font-size: 12px;
+  }
+  .paypal {
+    margin: 2em;
   }
 }

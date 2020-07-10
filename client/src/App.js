@@ -38,7 +38,6 @@ class App extends React.Component {
               WoodsUp
             </Link>
           </h1>
-
           <Navbar />
         </div>
         <Switch>

@@ -19,9 +19,9 @@ export default function privacypolicy() {
         <br />
         <span id="s3-t-ansprechpartner">Ansprechpartner</span>
         <br />
-        <span id="s3-t-strasse">Straße</span>
+        <span id="s3-t-strasse">Wollestraße 52</span>
         <br />
-        <span id="s3-t-plz">144</span> <span id="s3-t-ort">Potsdam</span>
+        <span id="s3-t-plz">14482</span> <span id="s3-t-ort">Potsdam</span>
       </p>
       <p>
         Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen

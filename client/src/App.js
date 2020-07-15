@@ -34,7 +34,7 @@ class App extends React.Component {
       <div className="App">
         <div className="nav-img">
           <h1 className="logo">
-            <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
+            <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>
               WoodsUp
             </Link>
           </h1>

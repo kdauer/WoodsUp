@@ -6,6 +6,7 @@
 
 * {
   font-family: 'Oswald', sans-serif;
+  font-size: 22px;
   padding: 0;
   margin: 0;
 }
@@ -40,31 +41,52 @@ body {
   margin-left: 1em;
 }
 
+.logo a {
+  font-size: 2em;
+}
+
 .nav-img {
-  padding-top: 1em;
-  background-image: url('paul-gilmore-KT3WlrL_bsg-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #fff;
   width: 100vw;
+  display: flex;
 }
 
 .home {
-  background-image: url('DSC073482.jpg');
+  background-image: url('paul-gilmore-KT3WlrL_bsg-unsplash.jpg');
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   z-index: -1000;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  /* width: 100vw;
+  height: 100vh;
+  position: absolute; */
+}
+
+.welcome {
+  background-image: url('DSC073482.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1000;
+  padding-top: 2em;
   width: 100vw;
   height: 100vh;
   position: absolute;
+}
+
+.space {
+  width: 100vw;
+  height: 100vh;
 }
 
 .Footer {
   background-color: white;
   color: black;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
   padding: 0.1em;
   position: fixed;
   bottom: 0;
@@ -87,9 +109,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1em 2em;
   padding: 1em;
   z-index: -1000;
+  color: white;
 }
 .about-container h1 {
   margin: 0.7em;
@@ -98,8 +120,9 @@ body {
 .support-container {
   display: flex;
   flex-direction: column;
-  margin: 2em;
   z-index: -1000;
+  padding-left: 2em;
+  color: white;
 }
 
 .support-container h1 {
@@ -240,13 +263,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .box {
   position: relative;
-  margin: 5em;
+  margin: 0 5em 5em 5em;
   /* background-color: rgba(48, 136, 21, 255); */
   border-radius: 6px;
 }
@@ -269,6 +292,7 @@ button {
   margin: 0.2em;
   padding-bottom: 1em;
   font-weight: bold;
+  font-size: 5em;
 }
 
 .project-heading {
@@ -279,13 +303,12 @@ button {
 .project-heading a {
   text-decoration: none;
   color: #000;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .mask {
   transition: 0.5s ease;
-  background-color: rgba(48, 136, 21, 255);
-  padding: 256px 260px;
+  /* background-color: rgba(48, 136, 21, 255); */
   border-radius: 8px;
   opacity: 0;
   position: absolute;
@@ -294,7 +317,8 @@ button {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+
   line-height: 2em;
 }
 
@@ -303,14 +327,26 @@ button {
 }
 
 .box:hover .mask {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .link {
-  background-color: rgba(48, 136, 21, 255);
-  color: #ffffff;
+  color: #fff;
+  opacity: 1;
+  background-color: transparent;
   text-decoration: none;
+}
+.link p {
   font-size: 2em;
+}
+
+.link-without-image p {
+  color: #fff;
+  font-size: 1em;
+}
+
+.project_title {
+  word-wrap: break-word;
 }
 
 .paypal {
@@ -342,7 +378,7 @@ button {
 
 /*NAV*/
 .nav {
-  height: 50px;
+  height: 1em;
   width: 100%;
   position: relative;
 }
@@ -365,7 +401,7 @@ button {
 .nav > .nav-links {
   display: flex;
   justify-content: flex-end;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .nav > .nav-links > a {
@@ -375,7 +411,7 @@ button {
   color: #fff;
   text-decoration: none;
   letter-spacing: 3px;
-  font-size: 14px;
+  font-size: 20px;
   background-color: rgba(48, 136, 21, 255);
   padding: 0.15em 0.4em;
   border-radius: 0.7em;
@@ -391,9 +427,24 @@ button {
   display: none;
 }
 
+.motivation {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.motivation li {
+  list-style: none;
+  padding: 0.3em;
+  text-align: center;
+}
+
+.motivation li a {
+  color: white;
+}
+
 @media (max-width: 500px) {
   * {
-    font-size: 12px;
+    font-size: 16px;
   }
   .logo a {
     font-size: 24px;
@@ -408,9 +459,9 @@ button {
     z-index: 999;
   }
   .nav > .nav-btn > label {
-    width: 50px;
-    height: 50px;
-    padding: 13px;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -481,17 +532,17 @@ button {
     padding: 74px 72px;
   }
   .project_title {
-    font-size: 12px;
+    font-size: 24px;
   }
   .project-heading {
     margin: 0.5em;
     margin-left: 2em;
   }
   .project-heading a {
-    font-size: 12px;
+    font-size: 26px;
   }
   .support-container {
-    font-size: 12px;
+    font-size: 26px;
   }
   .paypal {
     margin: 2em;

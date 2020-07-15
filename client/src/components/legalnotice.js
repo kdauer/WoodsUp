@@ -3,20 +3,15 @@ import React from 'react';
 export default function legalnotice() {
   return (
     <div className="impress">
-      <h3>WoodsUp</h3>
-      <p>jur. Person</p>
+      <h3>WoodsUp e.V.</h3>
       <p>
-        Straße <br />
-        144 Potsdam
+        Wollestraße 52
+        <br />
+        14482 Potsdam
       </p>
       <p>
         Mail: <a href="woodsup@posteo.de">woodsup@posteo.de</a>
       </p>
-      <p>
-        Tel: <a href="tel:+49">+49 (0) </a>
-      </p>
-      <p>St.-Nr.: </p>
-      <p>USt-ID: </p>
       <br />
       <h3>Haftungsausschluss</h3>
       <h5>Inhalt des Onlineangebotes</h5>

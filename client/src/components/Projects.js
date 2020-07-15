@@ -21,7 +21,7 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <div className="overview-container">
+      <div className="home">
         <ProjectsList projects={this.state.projects} />
       </div>
     );

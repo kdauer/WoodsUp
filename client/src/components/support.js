@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function support() {
   return (
-    <div className="support-container">
+    <div className="support-container home">
       <h1>Unterstützung</h1>
       <p>
         <b>
@@ -36,6 +36,7 @@ export default function support() {
           Spenden mit Paypal
         </a>
       </div>
+      <div className="space"></div>
     </div>
   );
 }

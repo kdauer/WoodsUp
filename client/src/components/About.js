@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="about-container">
+    <div className="about-container home">
       <h1>Über uns</h1>
       <h3>
         “Wir können nicht länger warten, wir sind die letzte Generation, die
@@ -26,14 +26,13 @@ export default function About() {
       </p>
       <br />
       <p>
-        Laut aktuellen Studien gäbe es derzeitig genug Platz für mindestens
-        1.000 Milliarden neue Bäume, ohne dass diese Wälder in Konkurrenz zu
-        anderen Nutzungen treten würden. Hiermit ließe sich bereits ein Viertel
-        des derzeitigen weltweiten Ausstoßes kompensieren. Die Aufforstung von
-        Ödland bindet nicht nur CO2 aus der Atmosphäre, sondern schafft
-        Lebensraum für Tiere und Pflanzen. Die Artenvielfalt wird erhöht, der
-        Boden vor Erosion geschützt und Wasserhaushalt entsprechend reguliert.
+        Mit Wäldern ließe sich ein großer Teil des menschengemachten
+        CO2-Ausstoßes kompensieren. Die Aufforstung von Ödland bindet nicht nur
+        CO2 aus der Atmosphäre, sondern schafft Lebensraum für Tiere und
+        Pflanzen. Die Artenvielfalt wird erhöht, der Boden vor Erosion geschützt
+        und Wasserhaushalt entsprechend reguliert.
       </p>
+      <div className="space"></div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import './App.css';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -15,6 +16,7 @@ import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Impress from './components/legalnotice';
 import DSGVO from './components/privacypolicy';
+import Contact from './components/Contact';
 
 class App extends React.Component {
   state = {
@@ -34,8 +36,8 @@ class App extends React.Component {
       <div className="App">
         <div className="nav-img">
           <h1 className="logo">
-            <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>
-              WoodsUp
+            <Link to="/">
+              <img src="/IMG_2825.JPG" alt="Logo" className="logo-img" />
             </Link>
           </h1>
           <Navbar />
@@ -79,7 +81,27 @@ class App extends React.Component {
           <Route exact path="/links" component={Knowing} />
           <Route path="/legalnotice" component={Impress} />
           <Route path="/privacypolicy" component={DSGVO} />
+          <Route path="/contact" component={Contact} />
         </Switch>
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: '#2B373B' }}
+          buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
+          expires={150}
+        >
+          Diese Website nutzt Cookies im Sinne der
+          <Link
+            to="/privacypolicy"
+            style={{ textDecoration: 'none', color: 'lightblue' }}
+          >
+            "Darenschutzerklärung"
+          </Link>{' '}
+          <span style={{ fontSize: '10px' }}>
+            (Akzeptieren um fortzufahren)
+          </span>
+        </CookieConsent>
         <Footer />
       </div>
     );

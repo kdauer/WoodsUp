@@ -45,6 +45,12 @@ body {
   font-size: 2em;
 }
 
+.logo-img {
+  height: 64px;
+  width: auto;
+  vertical-align: middle;
+}
+
 .nav-img {
   background-color: #fff;
   width: 100vw;
@@ -105,6 +111,10 @@ body {
   margin-left: 1em;
 }
 
+.Footer a:nth-child(3) {
+  margin-left: 3em;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -121,7 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   z-index: -1000;
-  padding-left: 2em;
+  padding: 1em;
   color: white;
 }
 
@@ -307,10 +317,10 @@ button {
 }
 
 .mask {
-  transition: 0.5s ease;
+  /* transition: 0.5s ease; */
   /* background-color: rgba(48, 136, 21, 255); */
   border-radius: 8px;
-  opacity: 0;
+  /* opacity: 0; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -318,17 +328,19 @@ button {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   /* white-space: nowrap; */
-
-  line-height: 2em;
 }
 
-.box:hover .projectImg {
+.mask p {
+  text-align: center;
+}
+
+/* .box:hover .projectImg {
   opacity: 0.5;
 }
 
 .box:hover .mask {
   opacity: 1;
-}
+} */
 
 .link {
   color: #fff;
@@ -337,7 +349,7 @@ button {
   text-decoration: none;
 }
 .link p {
-  font-size: 2em;
+  font-size: 20px;
 }
 
 .link-without-image p {
@@ -528,18 +540,15 @@ button {
     width: 80%;
     margin-bottom: 2em;
   }
-  .mask {
-    padding: 74px 72px;
-  }
-  .project_title {
-    font-size: 24px;
+  .link p {
+    font-size: 14px;
   }
   .project-heading {
     margin: 0.5em;
     margin-left: 2em;
   }
   .project-heading a {
-    font-size: 26px;
+    font-size: 16px;
   }
   .support-container {
     font-size: 26px;

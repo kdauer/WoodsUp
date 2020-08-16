@@ -19,7 +19,7 @@ export default function legalnotice() {
         Dieser Internetauftritt wurde mit äußerster Sorgfalt erstellt, dennoch
         wird daraufhingewiesen, dass keinerlei Gewähr für die Aktualität,
         Korrektheit, Vollständigkeit oder Qualität der bereitgestellten
-        Informationen übernommen. Haftungsansprüche jeglicher Art durch die
+        Informationen übernommen wird. Haftungsansprüche jeglicher Art durch die
         Nutzung oder die Nichtnutzung dieser Informationen bzw. durch die
         Nutzung fehlerhafter und unvollständiger Informationen werden
         ausgeschlossen. Der Anbieter dieses Internetauftritts behält sich das
@@ -28,13 +28,13 @@ export default function legalnotice() {
       </p>
       <h5>Verweise und Links</h5>
       <p>
-        Verweise und Links, die auf www.konstantindauer.de verwendet werden,
-        wurden inhaltlich geprüft und waren zum Zeitpunkt der Linksetzung frei
-        von illegalen Inhalten. Es wird daraufhingewiesen, dass der Anbieter
-        keinen Einfluss auf die aktuelle und zukünftige Gestaltung und auf die
-        Inhalte der verlinkten Seiten hat. Daher distanziert sich der Anbieter
-        hiermit ausdrücklich von den Inhalten aller verlinkten Seiten, die auf
-        www.webxells.com zu finden sind.
+        Verweise und Links, die auf WoodsUp verwendet werden, wurden inhaltlich
+        geprüft und waren zum Zeitpunkt der Linksetzung frei von illegalen
+        Inhalten. Es wird daraufhingewiesen, dass der Anbieter keinen Einfluss
+        auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der
+        verlinkten Seiten hat. Daher distanziert sich der Anbieter hiermit
+        ausdrücklich von den Inhalten aller verlinkten Seiten, die auf WoodsUp
+        zu finden sind.
       </p>
       <h5>Urheberrecht</h5>
       <p>

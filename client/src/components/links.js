@@ -10,7 +10,7 @@ export default function Links() {
             target="blank"
             href="https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2019/07/wie-baeume-das-klima-retten-koennten.html"
           >
-            Wie Bäume helfen könnten, das Klima zu retten*
+            Wie Bäume helfen könnten, das Klima zu retten
           </a>
         </li>
         <li>

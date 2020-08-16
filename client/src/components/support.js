@@ -6,16 +6,12 @@ export default function support() {
       <h1>Unterstützung</h1>
       <p>
         <b>
-          Wir freuen uns über Jede*, die mitmachen möchte. Wir benötigen aber
-          auch bepflanzbare Flächen und Baumsetzlinge. Die Aktionen werden durch
+          Wir freuen uns über Jede*, die mitmachen möchte. Außerdem benötigen
+          wir bepflanzbare Flächen und Baumsetzlinge. Pflanzungen werden durch
           Geldspenden ermöglicht.
         </b>
       </p>
-      <p>
-        Als gemeinnütziger Verein können wir auch Spendenquittungen für das
-        Finanzamt ausstellen. Woods Up ist ein 2018 gegründeter gemeinnütziger
-        Verein mit dem Sitz in Potsdam.
-      </p>
+      <p>Als gemeinnütziger Verein können wir Spendenquittungen ausstellen.</p>
       <p>
         <b>
           Woods Up e.V. <br />

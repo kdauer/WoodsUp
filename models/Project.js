@@ -18,7 +18,9 @@ const projectSchema = new Schema(
     _author: {
       type: Schema.Types.ObjectId,
       ref: 'User'
-    }
+    },
+    links: String,
+    gallery: String
   },
   {
     timestamps: {

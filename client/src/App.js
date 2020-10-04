@@ -96,7 +96,7 @@ class App extends React.Component {
             to="/privacypolicy"
             style={{ textDecoration: 'none', color: 'lightblue' }}
           >
-            "Darenschutzerklärung"
+            Datenschutzerklärung
           </Link>{' '}
           <span style={{ fontSize: '10px' }}>
             (Akzeptieren um fortzufahren)

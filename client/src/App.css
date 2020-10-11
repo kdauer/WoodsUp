@@ -464,6 +464,7 @@ button {
   background-color: rgb(48, 136, 21);
   border-radius: 2em;
   margin: 0 0.2em 0 0.2em;
+  font-size: 0.75em;
 }
 
 .lang-container p {

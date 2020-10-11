@@ -1,16 +1,19 @@
-import React from "react";
+import React, {Suspense} from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
+import './i18n'
 
 axios.get("/api/auth/loggedin").then(response => {
   ReactDOM.render(
+    <Suspense fallback={null}>
     <BrowserRouter>
       <App user={response.data} />
-    </BrowserRouter>,
+    </BrowserRouter>
+    </Suspense>,
     document.getElementById("root")
   );
 });

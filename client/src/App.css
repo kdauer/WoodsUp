@@ -454,6 +454,36 @@ button {
   color: white;
 }
 
+.lang-container {
+  display: flex;
+}
+
+.lang-container button {
+  border-style: none;
+  color: white;
+  background-color: rgb(48, 136, 21);
+  border-radius: 2em;
+  margin: 0 0.2em 0 0.2em;
+}
+
+.lang-container p {
+  margin-left: 2em;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 56.25%;
+}
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 500px) {
   * {
     font-size: 16px;
@@ -555,5 +585,20 @@ button {
   }
   .paypal {
     margin: 2em;
+  }
+  .lang-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Footer a {
+    margin: 0.2em;
+  }
+
+  .Footer a:nth-child(1) {
+    margin-left: 0.2em;
+  }
+  .foot-infos {
+    display: flex;
   }
 }

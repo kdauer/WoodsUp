@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactPlayer from "react-player"
 import axios from 'axios';
 
 export default class ProjectDetail extends Component {
@@ -32,6 +33,19 @@ export default class ProjectDetail extends Component {
           <div></div>
         )}
         <p>{project.content}</p>
+        {project.video ? (
+          <div className="video-container">
+          <ReactPlayer className='player'
+     url={project.video} width='100%'
+    height='100%' /></div>
+        ) : (
+          <div></div>
+        )}
+        {project.presslink ? (
+          <a href={project.presslink}>"Presse"</a>
+        ) : (
+          <p></p>
+        )}
       </div>
     );
   }

@@ -1,17 +1,17 @@
 import React from 'react';
+import { useTranslation } from "react-i18next"
 
-export default function support() {
+export default function Support() {
+  const { t } = useTranslation("translation");
   return (
     <div className="support-container home">
-      <h1>Unterstützung</h1>
+      <h1>{t("translation:support")}</h1>
       <p>
         <b>
-          Wir freuen uns über Jede*, die mitmachen möchte. Außerdem benötigen
-          wir bepflanzbare Flächen und Baumsetzlinge. Pflanzungen werden durch
-          Geldspenden ermöglicht.
+        {t("translation:supportParagraphOne")}
         </b>
       </p>
-      <p>Als gemeinnütziger Verein können wir Spendenquittungen ausstellen.</p>
+      <p>{t("translation:supportParagraphTwo")}</p>
       <p>
         <b>
           Woods Up e.V. <br />
@@ -21,7 +21,7 @@ export default function support() {
         </b>
       </p>
       <p>
-        Kontakt: <a href="woodsup@posteo.de">woodsup@posteo.de</a>
+      {t("translation:supportContact")} <a href="woodsup@posteo.de">woodsup@posteo.de</a>
       </p>
       <div className="paypal">
         <img src="/QR-Code.png" alt="QR-Code" />
@@ -29,7 +29,7 @@ export default function support() {
           href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F4CTCSJDAN8DQ&source=url"
           className="donate-btn"
         >
-          Spenden mit Paypal
+          {t("translation:donate")}
         </a>
       </div>
       <div className="space"></div>

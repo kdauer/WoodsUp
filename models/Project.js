@@ -19,7 +19,8 @@ const projectSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: 'User'
     },
-    links: String,
+    video: String,
+    presslinks: String,
     gallery: String
   },
   {

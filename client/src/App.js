@@ -18,20 +18,24 @@ import Impress from './components/legalnotice';
 import DSGVO from './components/privacypolicy';
 import Contact from './components/Contact';
 
+
+
 class App extends React.Component {
+
   state = {
     user: this.props.user
   };
-
+ 
   setUser = userObj => {
     this.setState({
       user: userObj
     });
   };
-
+  
   render() {
+    
     console.log('<App/> render: ', this.state.user);
-
+    
     return (
       <div className="App">
         <div className="nav-img">
@@ -96,10 +100,10 @@ class App extends React.Component {
             to="/privacypolicy"
             style={{ textDecoration: 'none', color: 'lightblue' }}
           >
-            Datenschutzerklärung
+            &nbsp;Datenschutzerklärung
           </Link>{' '}
           <span style={{ fontSize: '10px' }}>
-            (Akzeptieren um fortzufahren)
+          &nbsp;(Akzeptieren um fortzufahren)
           </span>
         </CookieConsent>
         <Footer />

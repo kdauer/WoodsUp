@@ -2,7 +2,10 @@ import React from 'react';
 import { useTranslation } from "react-i18next"
 
 export default function Support() {
-  const { t } = useTranslation("translation");
+  const { t, i18n } = useTranslation("translation");
+  const changeLanguage = code => {
+    i18n.changeLanguage(code);
+    };
   return (
     <div className="support-container home">
       <h1>{t("translation:support")}</h1>
@@ -32,6 +35,15 @@ export default function Support() {
           {t("translation:donate")}
         </a>
       </div>
+      <div className="lang-container">
+      <button className="lang-btn" type="button" onClick={() => changeLanguage("de")}>
+        {t("translation:de")}
+      </button>
+
+      <button className="lang-btn" type="button" onClick={() => changeLanguage("en")}>
+        {t("translation:en")}
+</button>
+</div>
       <div className="space"></div>
     </div>
   );

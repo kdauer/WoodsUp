@@ -89,7 +89,7 @@ class App extends React.Component {
         </Switch>
         <CookieConsent
           location="bottom"
-          buttonText="Accept"
+          buttonText="Akzeptieren"
           cookieName="myAwesomeCookieName2"
           style={{ background: '#2B373B' }}
           buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
